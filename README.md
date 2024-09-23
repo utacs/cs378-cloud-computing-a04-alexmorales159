@@ -2,9 +2,9 @@
 
 ## Team members' names 
 
-1. Student Name:
+1. Student Name: Alex Morales
 
-   Student UT EID:
+   Student UT EID: am95779
 
 2. Student Name:
 

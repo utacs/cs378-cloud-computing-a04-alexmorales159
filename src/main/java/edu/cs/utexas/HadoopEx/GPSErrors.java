@@ -34,7 +34,7 @@ public class GPSErrors extends Configured implements Tool {
 		try {
 			Configuration conf = new Configuration();
 
-			Job job = new Job(conf, "GPS Errors");
+			Job job = new Job(conf, "GPSErrors");
 			job.setJarByClass(GPSErrors.class);
 
 			// specify a Mapper

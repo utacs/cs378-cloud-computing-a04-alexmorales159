@@ -10,6 +10,10 @@
 
    Student UT EID:
 
+3. Student Name: Arul Yamdagni
+
+   Student UT EID: ay7494
+
  ...
 
 ##  Course Name: CS378 - Cloud Computing 

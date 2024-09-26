@@ -35,7 +35,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>edu.cs.utexas.HadoopEx.WordCount</mainClass>
+							<!-- <mainClass>edu.cs.utexas.HadoopEx.GPSErrors</mainClass>  -->
 						</manifest>
 					</archive>
 					<descriptorRefs>
@@ -45,7 +45,47 @@
 			</plugin>
 			
 			
-			
+			<!-- Exec Maven Plugin for running different main classes (drivers) -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<!-- Driver 1: GPSErrors -->
+					<execution>
+						<id>gps</id>
+						<phase>none</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>edu.cs.utexas.HadoopEx.GPSErrors</mainClass>
+						</configuration>
+					</execution>
+					<!-- Driver 2: TaxiErrors -->
+					<execution>
+						<id>taxi</id>
+						<phase>none</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>edu.cs.utexas.HadoopEx.TaxiErrors</mainClass>
+						</configuration>
+					</execution>
+					<!-- Driver 2: TopDrivers -->
+					<execution>
+						<id>driver</id>
+						<phase>none</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>edu.cs.utexas.HadoopEx.TopDrivers</mainClass>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			
 
 		</plugins>

@@ -6,15 +6,15 @@
 
    Student UT EID: am95779
 
-2. Student Name:
+2. Student Name: Jerry Ming
 
-   Student UT EID:
+   Student UT EID: jm98623
 
 3. Student Name: Arul Yamdagni
 
    Student UT EID: ay7494
 
- ...
+ 
 
 ##  Course Name: CS378 - Cloud Computing 
 
@@ -64,7 +64,19 @@ Inside your shell with Hadoop
 
 Running as Java Application:
 
-```java -jar target/MapReduce-WordCount-example-0.1-SNAPSHOT-jar-with-dependencies.jar SOME-Text-Fiel.txt  output``` 
+```java -jar target/MapReduce-GPSErrors-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 output1```
+
+```java -jar target/MapReduce-TaxiErrors-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 inter2 output2```
+
+```java -jar target/MapReduce-TopDrivers-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 inter3 output3```
+
+Or through Maven
+
+```mvn exec:java@gps -Dexec.args="taxi-data-sorted-small.csv.bz2 output1"```
+
+```mvn exec:java@taxi -Dexec.args="taxi-data-sorted-small.csv.bz2 inter2 output2"```
+
+```mvn exec:java@driver -Dexec.args="taxi-data-sorted-small.csv.bz2 inter3 output3"```
 
 Or has hadoop application
 

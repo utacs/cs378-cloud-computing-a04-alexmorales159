@@ -38,10 +38,10 @@ public class GPSErrors extends Configured implements Tool {
 			job.setJarByClass(GPSErrors.class);
 
 			// specify a Mapper
-			job.setMapperClass(GPSErrorsMapper.class);
+			job.setMapperClass(GPSMapper.class);
 
 			// specify a Reducer
-			job.setReducerClass(GPSErrorsReducer.class);
+			job.setReducerClass(GPSReducer.class);
 
 			// specify output types
 			job.setOutputKeyClass(IntWritable.class);

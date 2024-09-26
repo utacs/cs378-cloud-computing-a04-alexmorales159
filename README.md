@@ -22,7 +22,28 @@
     
 
 
-# Add your Project REPORT HERE 
+# Project Report
+Image of All Workers Running:
+![Workers Running](img/all-workers.png)
+
+Image of All Finished Jobs:
+![Finished Jobs](img/finished_jobs.png)
+
+GPS Error Hadoop Job 1:
+![GPS Hadoop](img/gps-hadoop.png)
+
+Errors By Taxi Job 1:
+![Taxi Errors 1](img/taxi-hadoop-1.png)
+
+Errors By Taxi Job 2:
+![Taxi Errors 1](img/taxi-hadoop-2.png)
+
+Top Ten Drivers Job 1:
+![Top Ten Drivers 1](img/driver-hadoop-1.png)
+
+Top Ten Drivers Job 2:
+![Top Ten Drivers 2](img/driver-hadoop-2.png)
+
 
 
 # Project Template

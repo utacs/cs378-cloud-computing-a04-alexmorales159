@@ -38,7 +38,7 @@ public class TaxiErrors extends Configured implements Tool {
 		try {
 			Configuration conf = new Configuration();
 
-			Job job = new Job(conf, "WordCount");
+			Job job = new Job(conf, "TaxiErrors");
 			job.setJarByClass(TaxiErrors.class);
 
 			// specify a Mapper

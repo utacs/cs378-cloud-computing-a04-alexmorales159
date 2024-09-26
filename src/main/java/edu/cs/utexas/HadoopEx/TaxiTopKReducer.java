@@ -87,8 +87,8 @@ public class TaxiTopKReducer extends  Reducer<Text, FloatWritable, Text, FloatWr
 
 
         for (WordAndCount value : values) {
-            context.write(value.getWord(), value.getErrorRatio());
-            logger.info("TopKReducer - Top-K Words are:  " + value.getWord() + "  Count:"+ value.getErrorRatio());
+            context.write(value.getWord(), value.getRatio());
+            logger.info("TopKReducer - Top-K Words are:  " + value.getWord() + "  Count:"+ value.getRatio());
         }
 
 

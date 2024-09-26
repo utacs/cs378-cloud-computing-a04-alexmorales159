@@ -9,19 +9,19 @@ import org.apache.hadoop.io.Text;
 public class WordAndCount implements Comparable<WordAndCount> {
 
         private final Text word;
-        private final FloatWritable errorRatio;
+        private final FloatWritable ratio;
 
-        public WordAndCount(Text word, FloatWritable errorRatio) {
+        public WordAndCount(Text word, FloatWritable ratio) {
             this.word = word;
-            this.errorRatio = errorRatio;
+            this.ratio = ratio;
         }
 
         public Text getWord() {
             return word;
         }
 
-        public FloatWritable getErrorRatio() {
-            return errorRatio;
+        public FloatWritable getRatio() {
+            return ratio;
         }
     /**
      * Compares two sort data objects by their value.
@@ -31,7 +31,7 @@ public class WordAndCount implements Comparable<WordAndCount> {
         @Override
         public int compareTo(WordAndCount other) {
 
-            float diff = errorRatio.get() - other.errorRatio.get();
+            float diff = ratio.get() - other.ratio.get();
             if (diff > 0) {
                 return 1;
             } else if (diff < 0) {
@@ -43,6 +43,6 @@ public class WordAndCount implements Comparable<WordAndCount> {
 
         public String toString(){
 
-            return "("+word.toString() +" , "+ errorRatio.toString()+")";
+            return "("+word.toString() +" , "+ ratio.toString()+")";
         }
     }

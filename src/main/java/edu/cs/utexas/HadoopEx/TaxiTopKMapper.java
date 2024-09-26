@@ -55,7 +55,7 @@ public class TaxiTopKMapper extends Mapper<Text, Text, Text, FloatWritable> {
 
 		while (pq.size() > 0) {
 			WordAndCount wordAndCount = pq.poll();
-			context.write(wordAndCount.getWord(), wordAndCount.getErrorRatio());
+			context.write(wordAndCount.getWord(), wordAndCount.getRatio());
 			logger.info("TaxiTopKMapper PQ Status: " + pq.toString());
 		}
 	}

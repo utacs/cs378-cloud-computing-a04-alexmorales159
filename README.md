@@ -64,9 +64,15 @@ Inside your shell with Hadoop
 
 Running as Java Application:
 
-```java -jar target/MapReduce-WordCount-example-0.1-SNAPSHOT-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 output``` 
+```java -jar target/MapReduce-GPSErrors-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 output1```
 
-```mvn exec:java@gps -Dexec.args="taxi-data-sorted-small.csv.bz2 output"```
+```java -jar target/MapReduce-TaxiErrors-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 inter2 output2```
+
+```java -jar target/MapReduce-TopDrivers-jar-with-dependencies.jar taxi-data-sorted-small.csv.bz2 inter3 output3```
+
+Or through Maven
+
+```mvn exec:java@gps -Dexec.args="taxi-data-sorted-small.csv.bz2 output1"```
 
 ```mvn exec:java@taxi -Dexec.args="taxi-data-sorted-small.csv.bz2 inter2 output2"```
 

@@ -14,6 +14,10 @@
 
    Student UT EID: ay7494
 
+4. Student Name: Leo Zou
+
+   Student UT EID: lz7744
+
  
 
 ##  Course Name: CS378 - Cloud Computing 
